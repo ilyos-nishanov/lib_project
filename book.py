@@ -1,4 +1,6 @@
 import csv
+import pprint
+from datetime import date
 from classtools import AttrDisplay
 
 class Book(AttrDisplay):
@@ -9,6 +11,7 @@ class Book(AttrDisplay):
         self.author = author    
         self.isbn = isbn
         self.copies = copies
+        self.in_hands = []
         self.__class__.__instances.append(self)
 
     @classmethod
@@ -30,12 +33,13 @@ class Book(AttrDisplay):
         for book in cls.__instances:
             print(book)
     
-    # def lend(self, title, patron_id, period)        
-    
-            
             
 if __name__ == '__main__':
     book1 = Book('Bob Smith', 'JR', 1, 100)
-    # print(book1)
-    Book.incomming_books('books.csv')
-    Book.showAll()
+    print(book1)
+    # Book.incomming_books('books.csv')
+    # Book.showAll()
+    pprint.pprint(book1)
+
+
+

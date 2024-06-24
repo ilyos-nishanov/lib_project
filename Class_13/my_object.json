@@ -1,0 +1,31 @@
+[{
+    "book": {
+        "harry_potter_1": {
+            "title": "harry_potter_1",
+            "author": "J Rowling",
+            "quantity": 100    
+        },
+        "harry_potter_2": {
+            "title": "harry_potter_2",
+            "author": "J Rownling",
+            "quantity": 200
+        }
+    },
+    "patron": {
+        "william": {
+            "name": "william",
+            "borrowed_books": [
+                {
+                "title": "harry_potter_1",
+                "date": "2024-06-12",
+                "return_date": "2024-06-14"
+                },
+                {
+                "title": "harry_potter_2",
+                "date": "2024-05-12",
+                "return_date": "2024-05-14"
+                }
+            ]
+        }
+    }
+}]

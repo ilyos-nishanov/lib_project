@@ -96,13 +96,19 @@ patron2 = Patron("Jane Smith", "P002")
 library.add_patron(patron1)
 library.add_patron(patron2)
 
+# View books and patrons
+print("\nBooks in the library:")
+library.view_books()
+print("\nPatrons in the library:")
+library.view_patrons()
+
 # Borrow and return books
 library.borrow_book("P001", "ISBN001")
 library.borrow_book("P002", "ISBN002")
 library.return_book("P001", "ISBN001")
 
 # View books and patrons
-print("Books in the library:")
+print("\nBooks in the library:")
 library.view_books()
 print("\nPatrons in the library:")
 library.view_patrons()
